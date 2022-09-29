@@ -58,8 +58,9 @@
       const newItemsList = document.querySelector('ul');
       newItemsList.append(...items);
     });
-    btn_input.addEventListener('keyup', (event) => {
-      if (event.key === 'Enter') {
+
+    btn_input.addEventListener('keypress', (event) => {
+      if (event.key === "Enter") {
         var newItem = [];
         const isi = btn_input.value;
         newItem.push(isi);
